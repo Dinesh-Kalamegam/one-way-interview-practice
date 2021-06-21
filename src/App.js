@@ -1,46 +1,35 @@
+import React from 'react'
+import { BrowserRouter as Router, Route,Link } from 'react-router-dom';
+import QuestionPage from './components/QuestionPage';
 import './App.css';
-import VideoRecorder from 'react-video-recorder'
-import { useState } from 'react'
 
 function App() {
-  const [userTimeLimit, setUserTimeLimit] = useState(3000)
-  const [userCountDown, setUserCountDown] = useState(3000)
-
-  return (
+  const questions = require("./questions.json")
+  const general = questions["general"]
+  return(
     <div className="App">
-      <div className="video-container">
-        <VideoRecorder
-          countdownTime={userCountDown}
-          timeLimit={userTimeLimit}
-          showReplayControls={true}
-        />
-      </div>
+      <div className="questions">
+        <Router>
+          <Route exact path={process.env.PUBLIC_URL+"/"}>
+          <h1 className="title"> One Way Interview Practice</h1>
+          <h2 className="question-type">General Questions</h2>
+            {general.map((x,index)=>
+                <Link to={process.env.PUBLIC_URL+"/"+index}>
+                  <p className="question-link">({index}) {x}</p>
+                </Link>
+              )}
+          </Route>
+        
+        {general.map((x,index)=>
+          <Route exact path={process.env.PUBLIC_URL+"/"+index}>
+            <QuestionPage key ={index} question={x}/>
+          </Route>
+        )}
 
-      <div className="options-container">
-        <h2>Question</h2>
-        <p>What project are you currently working on?</p>
-
-        <h3> Options</h3>
-
-        <p>Set the Time Limit of an answer</p>
-        <button value={2000} onClick={e => setUserTimeLimit(e.target.value)}>2s</button>
-        <button value={3000} onClick={e => setUserTimeLimit(e.target.value)}>3s</button>
-        <button value={5000} onClick={e => setUserTimeLimit(e.target.value)}>5s</button>
-        <button value={10000} onClick={e => setUserTimeLimit(e.target.value)}>10s</button>
-        <button value={15000} onClick={e => setUserTimeLimit(e.target.value)}>15s</button>
-        <button value={25000} onClick={e => setUserTimeLimit(e.target.value)}>25s</button>
-
-        <p> Set the Countdown before recording </p>
-
-        <button value={2000} onClick={e => setUserCountDown(e.target.value)}>2s</button>
-        <button value={3000} onClick={e => setUserCountDown(e.target.value)}>3s</button>
-        <button value={5000} onClick={e => setUserCountDown(e.target.value)}>5s</button>
-        <button value={10000} onClick={e => setUserCountDown(e.target.value)}>10s</button>
-        <button value={15000} onClick={e => setUserCountDown(e.target.value)}>15s</button>
-        <button value={25000} onClick={e => setUserCountDown(e.target.value)}>25s</button>
+      </Router>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

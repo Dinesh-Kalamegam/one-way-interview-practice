@@ -1,21 +1,22 @@
 .App{
-  display: flex;
-  background-color: rgb(31, 29, 26);
-  height: 100vh;
-  margin: 0;
-  padding:0
-}
-.video-container{
-  padding: 1em;
-  height: 600px;
-  width: 600px;
+    background-color: rgb(31, 29, 26);
+    height: fit-content;
+    padding: 0;
+    margin: 0;
 }
 
-.options-container{
-  color: white;
+.questions{
+    padding: 2em;
 }
 
-button:active
-{
-  background-color: yellow;
+.title,
+.question-type{
+    color: white;
+}
+.question-link{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    margin: 1em;
+
 }
