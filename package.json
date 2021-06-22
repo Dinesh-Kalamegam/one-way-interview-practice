@@ -2,6 +2,7 @@
   "name": "hirevue-practice",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://dinesh-kalamegam.github.io/one-way-interview-practice",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -28,18 +29,6 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   }
 }
