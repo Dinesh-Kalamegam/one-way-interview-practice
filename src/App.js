@@ -14,14 +14,14 @@ function App() {
           <h1 className="title"> One Way Interview Practice</h1>
           <h2 className="question-type">General Questions</h2>
             {general.map((x,index)=>
-                <Link to={process.env.PUBLIC_URL+"/"+index}>
+                <Link key={index}to={process.env.PUBLIC_URL+"/"+index}>
                   <p className="question-link">({index}) {x}</p>
                 </Link>
               )}
           </Route>
         
         {general.map((x,index)=>
-          <Route exact path={process.env.PUBLIC_URL+"/"+index}>
+          <Route key={index} exact path={process.env.PUBLIC_URL+"/"+index}>
             <QuestionPage key ={index} question={x}/>
           </Route>
         )}
