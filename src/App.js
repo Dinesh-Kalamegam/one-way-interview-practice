@@ -1,7 +1,7 @@
 import React from 'react'
+import './App.scss';
 import { BrowserRouter as Router, Route,Link } from 'react-router-dom';
 import QuestionPage from './components/QuestionPage';
-import './App.css';
 
 function App() {
   const questions = require("./questions.json")

@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState } from 'react'
-import './QuestionPage.css';
+import './QuestionPage.scss';
 import VideoRecorder from 'react-video-recorder'
 import {Link} from 'react-router-dom'
 
