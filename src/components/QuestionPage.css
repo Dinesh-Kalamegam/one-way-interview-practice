@@ -1,6 +1,6 @@
 .QuestionPage{
     display: flex;
-    background-color: rgb(31, 29, 26);
+    /* background-color: rgb(31, 29, 26); */
     height: 100vh;
     width: 100%;
     margin: 0;
@@ -13,7 +13,7 @@
   }
   
   .options-container{
-    color: white;
+    /* color: white; */
   }
   
   button:active

@@ -10,7 +10,7 @@ Simply choose a question, countdown time and question time limit then you should
 
 Right now I think the bare bone functionality works. 
 
-Not much thought has been put into the design yet so overtime the UI should improve and more questions I find on GitHub will be added 
+Not much thought has been put into the design yet (perhaps something with a corporate aesthetic) so overtime the UI should improve and more questions I find on GitHub will be added 
 
 ## Credits 
 
