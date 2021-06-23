@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/one-way-interview-practice/static/css/main.95855d56.chunk.css",
-    "main.js": "/one-way-interview-practice/static/js/main.f05a779c.chunk.js",
-    "main.js.map": "/one-way-interview-practice/static/js/main.f05a779c.chunk.js.map",
-    "runtime-main.js": "/one-way-interview-practice/static/js/runtime-main.badbcba3.js",
-    "runtime-main.js.map": "/one-way-interview-practice/static/js/runtime-main.badbcba3.js.map",
-    "static/js/2.c2b0bd4c.chunk.js": "/one-way-interview-practice/static/js/2.c2b0bd4c.chunk.js",
-    "static/js/2.c2b0bd4c.chunk.js.map": "/one-way-interview-practice/static/js/2.c2b0bd4c.chunk.js.map",
-    "static/js/3.43222b48.chunk.js": "/one-way-interview-practice/static/js/3.43222b48.chunk.js",
-    "static/js/3.43222b48.chunk.js.map": "/one-way-interview-practice/static/js/3.43222b48.chunk.js.map",
+    "main.css": "/one-way-interview-practice/static/css/main.83c4701c.chunk.css",
+    "main.js": "/one-way-interview-practice/static/js/main.85a06555.chunk.js",
+    "main.js.map": "/one-way-interview-practice/static/js/main.85a06555.chunk.js.map",
+    "runtime-main.js": "/one-way-interview-practice/static/js/runtime-main.257d16d5.js",
+    "runtime-main.js.map": "/one-way-interview-practice/static/js/runtime-main.257d16d5.js.map",
+    "static/js/2.e49b7519.chunk.js": "/one-way-interview-practice/static/js/2.e49b7519.chunk.js",
+    "static/js/2.e49b7519.chunk.js.map": "/one-way-interview-practice/static/js/2.e49b7519.chunk.js.map",
+    "static/js/3.3556d15f.chunk.js": "/one-way-interview-practice/static/js/3.3556d15f.chunk.js",
+    "static/js/3.3556d15f.chunk.js.map": "/one-way-interview-practice/static/js/3.3556d15f.chunk.js.map",
     "index.html": "/one-way-interview-practice/index.html",
-    "static/css/main.95855d56.chunk.css.map": "/one-way-interview-practice/static/css/main.95855d56.chunk.css.map",
-    "static/js/2.c2b0bd4c.chunk.js.LICENSE.txt": "/one-way-interview-practice/static/js/2.c2b0bd4c.chunk.js.LICENSE.txt"
+    "static/css/main.83c4701c.chunk.css.map": "/one-way-interview-practice/static/css/main.83c4701c.chunk.css.map",
+    "static/js/2.e49b7519.chunk.js.LICENSE.txt": "/one-way-interview-practice/static/js/2.e49b7519.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.badbcba3.js",
-    "static/js/2.c2b0bd4c.chunk.js",
-    "static/css/main.95855d56.chunk.css",
-    "static/js/main.f05a779c.chunk.js"
+    "static/js/runtime-main.257d16d5.js",
+    "static/js/2.e49b7519.chunk.js",
+    "static/css/main.83c4701c.chunk.css",
+    "static/js/main.85a06555.chunk.js"
   ]
 }
