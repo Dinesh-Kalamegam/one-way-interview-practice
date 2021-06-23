@@ -16,10 +16,14 @@ function QuestionPage(props) {
           timeLimit={userTimeLimit}
           showReplayControls={true}
         />
+        <div className="video-container-states">
+          <p>Question Time Limit: {userTimeLimit}</p>
+          <p>Countdown : {userCountDown}</p>
+        </div>
       </div>
 
       <div className="options-container">
-        <Link to="/">GO BACK</Link>
+        <Link to={process.env.PUBLIC_URL + "/"}>GO BACK</Link>
         <h2>Question</h2>
         <p>{props.question}</p>
 
