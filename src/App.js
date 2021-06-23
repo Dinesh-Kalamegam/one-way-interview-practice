@@ -29,21 +29,21 @@ function App() {
             {/* Hero Row of the Homepage */}
             <HomeHero />
 
-            {/* The Actual Question and Links */}
+            {/* The Question and Links */}
             <Accordion allowMultipleExpanded allowZeroExpanded >
               {
                 Object.entries(questions).map(([k, v]) => (
-                  <AccordionItem>
+                  <AccordionItem key={k}>
                     <AccordionItemHeading>
                       <AccordionItemButton>{k}</AccordionItemButton>
                     </AccordionItemHeading>
                     {
                       v.map((x, index) =>
-                      <AccordionItemPanel>
-                        <Link key={index} to={process.env.PUBLIC_URL + "/"+k+"/"+index}>
-                          <p className="question-link">({index}) {x}</p>
-                        </Link>
-                      </AccordionItemPanel>
+                        <AccordionItemPanel key={index}>
+                          <Link className="question-link" key={index} to={process.env.PUBLIC_URL + "/" + k + "/" + index}>
+                            <p >({index}) {x}</p>
+                          </Link>
+                        </AccordionItemPanel>
                       )
                     }
                   </AccordionItem>
@@ -52,17 +52,18 @@ function App() {
             </Accordion>
           </Route>
 
+          {/* Generate All the Pages here */}
           {
-            Object.entries(questions).map(([k,v])=>(
-              v.map((x,index)=>
-                <Route key={index} exact path={process.env.PUBLIC_URL+"/"+k+"/"+index}>
-                  <QuestionPage key ={index} question={x}/>
+            Object.entries(questions).map(([k, v]) => (
+              v.map((x, index) =>
+                <Route key={index} exact path={process.env.PUBLIC_URL + "/" + k + "/" + index}>
+                  <QuestionPage key={index} question={x} />
                 </Route>
               )
             ))
 
           }
-    
+
 
         </Router>
       </div>

@@ -17,8 +17,8 @@ function QuestionPage(props) {
           showReplayControls={true}
         />
         <div className="video-container-states">
-          <p>Question Time Limit: {userTimeLimit}</p>
-          <p>Countdown : {userCountDown}</p>
+          <p>Question Time Limit: {userTimeLimit}ms</p>
+          <p>Countdown : {userCountDown}ms</p>
         </div>
       </div>
 
@@ -30,21 +30,21 @@ function QuestionPage(props) {
         <h3> Options</h3>
 
         <p>Set the Time Limit of an answer</p>
-        <button value={2000} onClick={e => setUserTimeLimit(e.target.value)}>2s</button>
-        <button value={3000} onClick={e => setUserTimeLimit(e.target.value)}>3s</button>
-        <button value={5000} onClick={e => setUserTimeLimit(e.target.value)}>5s</button>
-        <button value={10000} onClick={e => setUserTimeLimit(e.target.value)}>10s</button>
-        <button value={15000} onClick={e => setUserTimeLimit(e.target.value)}>15s</button>
-        <button value={25000} onClick={e => setUserTimeLimit(e.target.value)}>25s</button>
+        <button value={2000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>2s</button>
+        <button value={3000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>3s</button>
+        <button value={5000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>5s</button>
+        <button value={10000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>10s</button>
+        <button value={15000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>15s</button>
+        <button value={25000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>25s</button>
 
         <p> Set the Countdown before recording </p>
 
-        <button value={2000} onClick={e => setUserCountDown(e.target.value)}>2s</button>
-        <button value={3000} onClick={e => setUserCountDown(e.target.value)}>3s</button>
-        <button value={5000} onClick={e => setUserCountDown(e.target.value)}>5s</button>
-        <button value={10000} onClick={e => setUserCountDown(e.target.value)}>10s</button>
-        <button value={15000} onClick={e => setUserCountDown(e.target.value)}>15s</button>
-        <button value={25000} onClick={e => setUserCountDown(e.target.value)}>25s</button>
+        <button value={2000} onClick={e => setUserCountDown(parseInt(e.target.value))}>2s</button>
+        <button value={3000} onClick={e => setUserCountDown(parseInt(e.target.value))}>3s</button>
+        <button value={5000} onClick={e => setUserCountDown(parseInt(e.target.value))}>5s</button>
+        <button value={10000} onClick={e => setUserCountDown(parseInt(e.target.value))}>10s</button>
+        <button value={15000} onClick={e => setUserCountDown(parseInt(e.target.value))}>15s</button>
+        <button value={25000} onClick={e => setUserCountDown(parseInt(e.target.value))}>25s</button>
       </div>
     </div>
   );
