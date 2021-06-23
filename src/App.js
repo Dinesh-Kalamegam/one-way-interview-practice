@@ -48,11 +48,11 @@ function App() {
                     </AccordionItemHeading>
                     {
                       v.map((x, index) =>
-                        <AccordionItemPanel key={index}>
                           <Link className="question-link" key={index} to={process.env.PUBLIC_URL + "/" + k + "/" + index}>
+                          <AccordionItemPanel key={index}>
                             <p >({index}) {x}</p>
+                          </AccordionItemPanel>
                           </Link>
-                        </AccordionItemPanel>
                       )
                     }
                   </AccordionItem>

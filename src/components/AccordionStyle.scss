@@ -19,7 +19,7 @@
 .accordion__button {
     background-color: #f4f4f4;
     color: $accent-color;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     padding: 18px;
     text-align: left;
@@ -58,10 +58,18 @@
     border: solid 0.5px black;
     animation: fadein 0.5s ease-in-out;
 
-    .question-link{
-        color: #000000;
-        text-decoration: none;
+    &:hover{
+        // background-color: red;
+        background-color: hsl(218, 29%, 96%);
+        font-weight: 500;
+
     }
+
+}
+
+.question-link{
+    color: #000000;
+    text-decoration: none;
 }
 
 /* -------------------------------------------------- */
