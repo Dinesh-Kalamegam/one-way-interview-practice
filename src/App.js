@@ -15,6 +15,7 @@ import {
 // Demo styles, see 'Styles' section below for some notes on use.
 // import 'react-accessible-accordion/dist/fancy-example.css';
 import './components/AccordionStyle.scss'
+import HomeHowWorks from './components/HomeHowWorks';
 
 function App() {
   const questions = require("./questions.json")
@@ -31,6 +32,7 @@ function App() {
             <HomeHero />
 
             <h2>How it works</h2>
+            <HomeHowWorks/>
             <h2>Check the questions here</h2>
             {/* The Question and Links */}
             <Accordion allowMultipleExpanded allowZeroExpanded >

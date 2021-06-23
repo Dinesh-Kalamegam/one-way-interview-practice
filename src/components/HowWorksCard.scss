@@ -1,0 +1,16 @@
+@import 'globals';
+
+
+.howworks-card{
+    height:250px;
+    width: 250px;
+    border: solid 1px $accent-color;
+    border-radius: 1em;
+    padding: 1em;
+
+    background-color: white;
+}
+.howworks-img{
+    height: 150px;
+    // width: 200px;
+}
