@@ -9,11 +9,12 @@ import {
   AccordionItemHeading,
   AccordionItemButton,
   AccordionItemPanel,
+  AccordionItemState
 } from 'react-accessible-accordion';
 
 // Demo styles, see 'Styles' section below for some notes on use.
-import 'react-accessible-accordion/dist/fancy-example.css';
-
+// import 'react-accessible-accordion/dist/fancy-example.css';
+import './components/AccordionStyle.scss'
 
 function App() {
   const questions = require("./questions.json")
@@ -29,13 +30,21 @@ function App() {
             {/* Hero Row of the Homepage */}
             <HomeHero />
 
+            <h2>How it works</h2>
+            <h2>Check the questions here</h2>
             {/* The Question and Links */}
             <Accordion allowMultipleExpanded allowZeroExpanded >
               {
                 Object.entries(questions).map(([k, v]) => (
                   <AccordionItem key={k}>
                     <AccordionItemHeading>
-                      <AccordionItemButton>{k}</AccordionItemButton>
+                      <AccordionItemButton>
+                        {k}
+                        {/* <AccordionItemState>
+                            {({ expanded }) => (expanded ? 'expanded' : 'collapsed')}
+                        </AccordionItemState> */}
+
+                      </AccordionItemButton>
                     </AccordionItemHeading>
                     {
                       v.map((x, index) =>
