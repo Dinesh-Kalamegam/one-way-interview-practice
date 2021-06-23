@@ -1,0 +1,30 @@
+@import 'globals';
+
+h1{
+    font-size: 3em;
+}
+
+
+.hero-row{
+    display: flex;;
+    align-items: center;
+    // justify-content: center;
+    // width: 80%;
+    margin: 0 auto;
+    // border: solid 1px black;
+}
+
+.hero-keyword{
+    color: $accent-color;
+}
+
+.hero-row-left{
+    // margin-left: auto;
+    // text-align: center;
+    padding: 1em;
+}
+
+.hero-image{
+    width: 50%;
+    margin-left: auto;
+}

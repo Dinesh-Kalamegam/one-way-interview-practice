@@ -19,3 +19,6 @@ https://github.com/fbaiodias/react-video-recorder
 
 The general questions were taken from :
 https://github.com/yangshun/tech-interview-handbook/blob/master/contents/behavioral-questions.md
+
+Temporary Product Management questions were taken from:
+https://gist.github.com/lokimeyburg/d83c7cf10615ee68e5f49b87082617a1
