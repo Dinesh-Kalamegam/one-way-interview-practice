@@ -1,3 +1,11 @@
 @import 'globals';
 
 $video-dimension : 600px;
+
+.QuestionPage{
+  height: fit-content;
+}
+.selection-option{
+  padding: 0.5em;
+  // margin-left: 1em;
+}

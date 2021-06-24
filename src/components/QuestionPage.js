@@ -5,12 +5,13 @@ import VideoRecorder from 'react-video-recorder'
 import { Link } from 'react-router-dom'
 
 function QuestionPage(props) {
-  const [userTimeLimit, setUserTimeLimit] = useState(3000)
+  const [userTimeLimit, setUserTimeLimit] = useState(30000)
   const [userCountDown, setUserCountDown] = useState(3000)
 
   return (
     <React.Fragment>
         <h2>Question</h2>
+        <Link to={process.env.PUBLIC_URL + "/"}>GO BACK</Link>
         <p>{props.question}</p>
       <div className="QuestionPage">
         <div className="video-container">
@@ -22,32 +23,31 @@ function QuestionPage(props) {
         </div>
 
         <div className="options-container">
-          <p>Question Time Limit: {userTimeLimit}ms</p>
-          <p>Countdown : {userCountDown}ms</p>
-          <Link to={process.env.PUBLIC_URL + "/"}>GO BACK</Link>
+          {/* <p>Question Time Limit: {userTimeLimit}ms</p>
+          <p>Countdown : {userCountDown}ms</p> */}
+          
 
           <h3> Options</h3>
 
           <p>Set the Time Limit of an answer</p>
-          <React.Fragment>
-            <button value={2000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>2s</button>
-            <button value={3000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>3s</button>
-            <button value={5000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>5s</button>
-            <button value={10000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>10s</button>
-            <button value={15000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>15s</button>
-            <button value={25000} onClick={e => setUserTimeLimit(parseInt(e.target.value))}>25s</button>
-          </React.Fragment>
+          <select className ="selection-option" onClick={e => setUserTimeLimit(parseInt(e.target.value))}>
+            <option value="10000">10 seconds</option>
+            <option value="30000">30 seconds</option>
+            <option value="60000">1 minute</option>
+            <option value="120000">2 minutes</option>
+            <option defaultValue value="180000">3 minutes</option>
+          </select> 
 
           <p> Set the Countdown before recording </p>
 
-          <React.Fragment>
-            <button value={2000} onClick={e => setUserCountDown(parseInt(e.target.value))}>2s</button>
-            <button value={3000} onClick={e => setUserCountDown(parseInt(e.target.value))}>3s</button>
-            <button value={5000} onClick={e => setUserCountDown(parseInt(e.target.value))}>5s</button>
-            <button value={10000} onClick={e => setUserCountDown(parseInt(e.target.value))}>10s</button>
-            <button value={15000} onClick={e => setUserCountDown(parseInt(e.target.value))}>15s</button>
-            <button value={25000} onClick={e => setUserCountDown(parseInt(e.target.value))}>25s</button>
-          </React.Fragment>
+          <select className ="selection-option" onClick={e => setUserCountDown(parseInt(e.target.value))}>
+            <option defaultValue value="3000">3 seconds</option>
+            <option value="10000">10 seconds</option>
+            <option value="30000">30 seconds</option>
+            <option value="60000">1 minute</option>
+            <option value="120000">2 minutes</option>
+            <option value="180000">3 minutes</option>
+          </select> 
         </div>
 
       </div>
