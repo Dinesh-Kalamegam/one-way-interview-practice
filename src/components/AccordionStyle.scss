@@ -34,6 +34,11 @@
     color: white;
 }
 
+.accordion__button[aria-expanded='true']{
+    background-color: $accent-color;
+    color: white;
+}
+
 .accordion__button:before {
     display: inline-block;
     content: '';

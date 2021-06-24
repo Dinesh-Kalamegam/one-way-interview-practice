@@ -40,12 +40,8 @@ function App() {
                 Object.entries(questions).map(([k, v]) => (
                   <AccordionItem key={k}>
                     <AccordionItemHeading>
-                      <AccordionItemButton>
+                      <AccordionItemButton  >
                         {k}
-                        {/* <AccordionItemState>
-                            {({ expanded }) => (expanded ? 'expanded' : 'collapsed')}
-                        </AccordionItemState> */}
-
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     {
