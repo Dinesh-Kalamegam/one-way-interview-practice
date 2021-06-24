@@ -4,7 +4,7 @@
 https://dinesh-kalamegam.github.io/one-way-interview-practice/
 
 ## What is this? 
-A website for Hirevue Practice or any other one way interview platforms where you record yourself answering a question
+A website for OnDemand Interview practice such as Hirevue, Sonru or whatever other one way interview platform where you record yourself answering a question. 
 
 Simply choose a question, countdown time and question time limit then you should be good to go.
 

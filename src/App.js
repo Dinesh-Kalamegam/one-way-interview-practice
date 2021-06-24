@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <div className="questions">
-        <Router>
+        <Router >
 
           <Route exact path={process.env.PUBLIC_URL + "/"}>
             {/* Hero Row of the Homepage */}

@@ -1,11 +1,25 @@
 @import 'globals';
 
-$video-dimension : 600px;
+$video-dimension : 85%;
 
 .QuestionPage{
-  height: fit-content;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container{
+  height: $video-dimension;
+  max-width: $video-dimension;
+  flex-basis: $video-dimension;
+}
+
+.options-container{
+  padding: 1em;
 }
 .selection-option{
   padding: 0.5em;
+  width: 50%;
   // margin-left: 1em;
+  text-overflow: wrap;
 }

@@ -10,9 +10,7 @@ function QuestionPage(props) {
 
   return (
     <React.Fragment>
-        <h2>Question</h2>
-        <Link to={process.env.PUBLIC_URL + "/"}>GO BACK</Link>
-        <p>{props.question}</p>
+      <h2><Link to={process.env.PUBLIC_URL + "/"}>⬅</Link>{props.question}</h2>
       <div className="QuestionPage">
         <div className="video-container">
           <VideoRecorder
@@ -20,34 +18,22 @@ function QuestionPage(props) {
             timeLimit={userTimeLimit}
             showReplayControls={true}
           />
-        </div>
+          <select className="selection-option" onClick={e => setUserTimeLimit(parseInt(e.target.value))}>
+            <option value="10000">Time Limit: 10 seconds</option>
+            <option value="30000">Time Limit: 30 seconds</option>
+            <option value="60000">Time Limit: 1 minute</option>
+            <option value="120000">Time Limit: 2 minutes</option>
+            <option defaultValue value="180000">Time Limit: 3 minutes</option>
+          </select>
 
-        <div className="options-container">
-          {/* <p>Question Time Limit: {userTimeLimit}ms</p>
-          <p>Countdown : {userCountDown}ms</p> */}
-          
-
-          <h3> Options</h3>
-
-          <p>Set the Time Limit of an answer</p>
-          <select className ="selection-option" onClick={e => setUserTimeLimit(parseInt(e.target.value))}>
-            <option value="10000">10 seconds</option>
-            <option value="30000">30 seconds</option>
-            <option value="60000">1 minute</option>
-            <option value="120000">2 minutes</option>
-            <option defaultValue value="180000">3 minutes</option>
-          </select> 
-
-          <p> Set the Countdown before recording </p>
-
-          <select className ="selection-option" onClick={e => setUserCountDown(parseInt(e.target.value))}>
-            <option defaultValue value="3000">3 seconds</option>
-            <option value="10000">10 seconds</option>
-            <option value="30000">30 seconds</option>
-            <option value="60000">1 minute</option>
-            <option value="120000">2 minutes</option>
-            <option value="180000">3 minutes</option>
-          </select> 
+          <select className="selection-option" onClick={e => setUserCountDown(parseInt(e.target.value))}>
+            <option defaultValue value="3000">Countdown: 3 seconds</option>
+            <option value="10000">Countdown: 10 seconds</option>
+            <option value="30000">Countdown: 30 seconds</option>
+            <option value="60000">Countdown: 1 minute</option>
+            <option value="120000">Countdown: 2 minutes</option>
+            <option value="180000">Countdown: 3 minutes</option>
+          </select>
         </div>
 
       </div>
