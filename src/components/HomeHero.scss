@@ -23,3 +23,18 @@ h1{
     width: 50%;
     margin-left: auto;
 }
+
+@media screen and (max-width:600px) {
+    .hero-row{
+        flex-direction: column-reverse;
+    }
+
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero-row-left{
+        padding-left: 0;
+        text-align: center;
+    }
+}
