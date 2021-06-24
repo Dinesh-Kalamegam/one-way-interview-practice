@@ -8,6 +8,25 @@ $video-dimension : 85%;
   justify-content: center;
 }
 
+h2{
+  display: flex;
+  align-items: center;
+}
+.go-back-arrow{
+  text-decoration: none;
+  display: inline-block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 3px solid $accent-color;
+  border-right: 3px solid $accent-color;
+  transform: rotate(135deg)
+}
+.question-title{
+  color: $accent-color;
+  text-align: center;
+}
 .video-container{
   height: $video-dimension;
   max-width: $video-dimension;
@@ -22,4 +41,7 @@ $video-dimension : 85%;
   width: 50%;
   // margin-left: 1em;
   text-overflow: wrap;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: right;
 }

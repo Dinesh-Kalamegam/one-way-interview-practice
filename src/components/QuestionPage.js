@@ -10,7 +10,11 @@ function QuestionPage(props) {
 
   return (
     <React.Fragment>
-      <h2><Link to={process.env.PUBLIC_URL + "/"}>⬅</Link>{props.question}</h2>
+      <h2 className="question-title">
+        <Link className="go-back-arrow" to={process.env.PUBLIC_URL + "/"}></Link>
+        {props.question}
+      </h2>
+
       <div className="QuestionPage">
         <div className="video-container">
           <VideoRecorder
