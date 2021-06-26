@@ -8,9 +8,7 @@ A website for OnDemand Interview practice such as Hirevue, Sonru or whatever oth
 
 Simply choose a question, countdown time and question time limit then you should be good to go.
 
-Right now I think the bare bone functionality works. 
-
-Not much thought has been put into the design yet (perhaps something with a corporate aesthetic) so overtime the UI should improve and more questions I find on GitHub will be added 
+More of the UI and design has been worked though it definitely still needs a bit more polish
 
 ## Credits 
 
@@ -22,3 +20,6 @@ https://github.com/yangshun/tech-interview-handbook/blob/master/contents/behavio
 
 Temporary Product Management questions were taken from:
 https://gist.github.com/lokimeyburg/d83c7cf10615ee68e5f49b87082617a1
+
+All the illustrations were from https://undraw.co/
+
