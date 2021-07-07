@@ -9,12 +9,16 @@ h1{
     display: flex;;
     align-items: center;
     flex-direction: column;
-    background-color: lighten($accent-color,40);
+    background-color: #0f64f2;
+    background-image: linear-gradient(160deg, #0f64f2 0%, hsl(173, 46%, 86%) 100%);
+
+
     font-weight: 100;
 }
 
 .hero-keyword{
     color: $accent-color;
+    // color: white;
 }
 
 .hero-row-left{

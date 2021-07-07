@@ -34,7 +34,7 @@ function App() {
             <HomeHowWorks/>
 
             <section>
-            <h2>Check the questions here</h2>
+            <h2>Choose a question from one of these lists</h2>
             {/* The Question and Links */}
             <Accordion allowMultipleExpanded allowZeroExpanded >
               {
@@ -54,6 +54,7 @@ function App() {
                           </Link>
                       )
                     }
+
                   </AccordionItem>
                 ))
               }
