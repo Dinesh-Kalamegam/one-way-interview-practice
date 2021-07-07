@@ -7,10 +7,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 function QuestionPage(props) {
-  const [userTimeLimit, setUserTimeLimit] = useState(30000)
-  const [userCountDown, setUserCountDown] = useState(3000)
   const questions = require("../questions.json")
   const [questionState, setQuestionState] = useState("Tell Me About Yourself")
+
+  const [userTimeLimit, setUserTimeLimit] = useState(30000)
+  const [userCountDown, setUserCountDown] = useState(3000)
 
   return (
     <section>
@@ -56,13 +57,12 @@ function QuestionPage(props) {
         </TabList>
 
         {
-            Object.entries(questions).map(([k, v]) => (
-              <TabPanel>
-                {v.map(q=>(<button value={q} onClick={e=>setQuestionState(e.target.value)}>{q}</button>))}
-              </TabPanel>
-            ))
-          }
-
+          Object.entries(questions).map(([k, v]) => (
+            <TabPanel>
+              {v.map(q => (<button value={q} onClick={e => setQuestionState(e.target.value)}>{q}</button>))}
+            </TabPanel>
+          ))
+        }
       </Tabs>
 
     </section>
