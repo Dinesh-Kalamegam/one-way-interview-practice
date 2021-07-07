@@ -1,14 +1,16 @@
 @import 'globals';
 
 h1{
-    font-size: 3em;
+    font-size: 2em;
 }
 
 
 .hero-row{
     display: flex;;
     align-items: center;
-    margin: 2em 0;
+    flex-direction: column;
+    background-color: lighten($accent-color,40);
+    font-weight: 100;
 }
 
 .hero-keyword{
@@ -20,14 +22,12 @@ h1{
 }
 
 .hero-image{
-    width: 50%;
-    margin-left: auto;
+    width: 50vw;
+    min-width: 200px;
+    // margin-left: auto;
 }
 
 @media screen and (max-width:600px) {
-    .hero-row{
-        flex-direction: column-reverse;
-    }
 
     .hero-image{
         width: 100%;

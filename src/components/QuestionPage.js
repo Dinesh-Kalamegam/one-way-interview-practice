@@ -9,7 +9,7 @@ function QuestionPage(props) {
   const [userCountDown, setUserCountDown] = useState(3000)
 
   return (
-    <React.Fragment>
+    <section>
       <h2 className="question-title">
         <Link className="go-back-arrow" to={process.env.PUBLIC_URL + "/"}></Link>
         {props.question}
@@ -41,7 +41,7 @@ function QuestionPage(props) {
         </div>
 
       </div>
-    </React.Fragment>
+    </section>
   );
 }
 

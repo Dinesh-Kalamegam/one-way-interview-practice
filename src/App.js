@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.scss';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Route, Link } from 'react-router-dom';
 import QuestionPage from './components/QuestionPage';
 import HomeHero from './components/HomeHero';
 import {
@@ -31,8 +31,9 @@ function App() {
             {/* Hero Row of the Homepage */}
             <HomeHero />
 
-            <h2>How it works</h2>
             <HomeHowWorks/>
+
+            <section>
             <h2>Check the questions here</h2>
             {/* The Question and Links */}
             <Accordion allowMultipleExpanded allowZeroExpanded >
@@ -57,6 +58,8 @@ function App() {
                 ))
               }
             </Accordion>
+            </section>
+
           </Route>
 
           {/* Generate All the Pages here */}
@@ -70,7 +73,6 @@ function App() {
             ))
 
           }
-
 
         </Router>
       </div>

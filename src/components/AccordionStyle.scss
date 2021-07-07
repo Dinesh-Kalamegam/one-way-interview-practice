@@ -65,8 +65,8 @@
     animation: fadein 0.5s ease-in-out;
 
     &:hover{
-        // background-color: red;
-        background-color: hsl(218, 29%, 96%);
+        background-color: lighten($accent-color,45);
+        // background-color: hsl(218, 29%, 96%);
         font-weight: 500;
 
     }
