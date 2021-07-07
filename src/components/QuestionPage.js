@@ -3,16 +3,20 @@ import { useState } from 'react'
 import './QuestionPage.scss';
 import VideoRecorder from 'react-video-recorder'
 import { Link } from 'react-router-dom'
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 function QuestionPage(props) {
   const [userTimeLimit, setUserTimeLimit] = useState(30000)
   const [userCountDown, setUserCountDown] = useState(3000)
+  const questions = require("../questions.json")
+  const [questionState, setQuestionState] = useState("Tell Me About Yourself")
 
   return (
     <section>
       <h2 className="question-title">
         <Link className="go-back-arrow" to={process.env.PUBLIC_URL + "/"}></Link>
-        {props.question}
+        {questionState}
       </h2>
 
       <div className="QuestionPage">
@@ -41,6 +45,26 @@ function QuestionPage(props) {
         </div>
 
       </div>
+
+      <Tabs>
+        <TabList>
+          {
+            Object.entries(questions).map(([k, v]) => (
+              <Tab>{k}</Tab>
+            ))
+          }
+        </TabList>
+
+        {
+            Object.entries(questions).map(([k, v]) => (
+              <TabPanel>
+                {v.map(q=>(<button value={q} onClick={e=>setQuestionState(e.target.value)}>{q}</button>))}
+              </TabPanel>
+            ))
+          }
+
+      </Tabs>
+
     </section>
   );
 }

@@ -19,7 +19,6 @@ import HomeHowWorks from './components/HomeHowWorks';
 
 function App() {
   const questions = require("./questions.json")
-  const general = questions["General"]
 
   // Object.entries(questions).map(([k,v])=>console.log(k,v))
   return (
@@ -30,13 +29,15 @@ function App() {
           <Route exact path={process.env.PUBLIC_URL + "/"}>
             {/* Hero Row of the Homepage */}
             <HomeHero />
-
             <HomeHowWorks/>
+          <Link to={process.env.PUBLIC_URL + "/question" }>
+            <h2> Try it  </h2>
+          </Link>
 
-            <section>
-            <h2>Choose a question from one of these lists</h2>
+            {/* <section> */}
+            {/* <h2>Choose a question from one of these lists</h2> */}
             {/* The Question and Links */}
-            <Accordion allowMultipleExpanded allowZeroExpanded >
+            {/* <Accordion allowMultipleExpanded allowZeroExpanded >
               {
                 Object.entries(questions).map(([k, v]) => (
                   <AccordionItem key={k}>
@@ -58,13 +59,13 @@ function App() {
                   </AccordionItem>
                 ))
               }
-            </Accordion>
-            </section>
+            </Accordion> */}
+            {/* </section> */}
 
           </Route>
 
           {/* Generate All the Pages here */}
-          {
+          {/* {
             Object.entries(questions).map(([k, v]) => (
               v.map((x, index) =>
                 <Route key={index} exact path={process.env.PUBLIC_URL + "/" + k + "/" + index}>
@@ -73,7 +74,11 @@ function App() {
               )
             ))
 
-          }
+          } */}
+
+          <Route exact path={process.env.PUBLIC_URL + "/question" }>
+            <QuestionPage/>
+          </Route>
 
         </Router>
       </div>
