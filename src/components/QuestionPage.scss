@@ -2,11 +2,12 @@
 
 $video-dimension : 85%;
 $accent-color:white;
-.QuestionApp{
+
+.QuestionPage{
   background-image: $linear-grad;
 }
 
-.QuestionPage{
+.QuestionApp{
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -16,6 +17,8 @@ $accent-color:white;
 h2{
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .go-back-arrow{
   text-decoration: none;
@@ -31,6 +34,8 @@ h2{
 .question-title{
   color: $accent-color;
   margin-top: 0;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 .video-container{
   height: $video-dimension;
@@ -49,4 +54,38 @@ h2{
   font-weight: 500;
   font-size: 1em;
   text-align: right;
+
+  &:hover{
+    cursor: pointer;
+    background-color: rgb(161, 255, 161);
+
+  }
+}
+
+.question-selection-menu{
+  padding:1em;
+}
+
+.question-tab-panel{
+  display: flex;
+  flex-wrap: wrap;
+}
+.question-button{
+  padding:1em;
+  flex-basis: 33%;
+  // flex-basis: ;
+
+  @media screen and (max-width:480px) {
+    flex-basis: 50%;
+  }
+
+  @media screen and (max-width:400px) {
+    flex-basis: 100%;
+  }
+
+  &:hover{
+    cursor: pointer;
+    background-color: rgb(161, 255, 161);
+
+  }
 }

@@ -13,13 +13,14 @@ function QuestionPage() {
   const [userCountDown, setUserCountDown] = useState(3000)
 
   return (
-    <section className="QuestionApp">
+    <section className="QuestionPage">
+
       <h2 className="question-title">
         <Link className="go-back-arrow" to={process.env.PUBLIC_URL + "/"}></Link>
         {questionState}
       </h2>
 
-      <div className="QuestionPage">
+      <div className="QuestionApp">
         <div className="video-container">
           <VideoRecorder
             countdownTime={userCountDown}
@@ -46,7 +47,7 @@ function QuestionPage() {
 
       </div>
 
-      <Tabs>
+      <Tabs className="question-selection-menu">
         <TabList>
           {
             Object.entries(questions).map(([k, v]) => (
@@ -57,8 +58,8 @@ function QuestionPage() {
 
         {
           Object.entries(questions).map(([k, v]) => (
-            <TabPanel>
-              {v.map(q => (<button value={q} onClick={e => setQuestionState(e.target.value)}>{q}</button>))}
+            <TabPanel className="question-tab-panel">
+              {v.map(q => (<button className="question-button" value={q} onClick={e => setQuestionState(e.target.value)}>{q}</button>))}
             </TabPanel>
           ))
         }
