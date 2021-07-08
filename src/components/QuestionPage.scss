@@ -12,18 +12,31 @@ $video-dimension: 50%;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1em;
+
+    @media screen and (max-width:600px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .question-area-video {
     flex-basis: $video-dimension;
     width: $video-dimension;
     padding: 1em;
+
+    @media screen and (max-width:600px) {
+        flex-basis: 90%;
+        width: 90%;
+    }
 }
 
 .question-area-selection{
-    // overflow-y: scroll;
-    // height: 600px;
     flex-basis: 40% ;
+
+    @media screen and (max-width:600px) {
+        flex-basis: 90%;
+        width: 90%;
+    }
 }
 
 .recording-option{

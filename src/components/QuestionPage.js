@@ -5,16 +5,6 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './react-tabs.scss';
 import './QuestionPage.scss';
 
-// import {
-//   Accordion,
-//   AccordionItem,
-//   AccordionItemHeading,
-//   AccordionItemButton,
-//   AccordionItemPanel,
-//   AccordionItemState
-// } from 'react-accessible-accordion';
-// import './AccordionStyle.scss';
-
 function QuestionPage() {
   const questions = require("../questions.json")
   const [questionAsked, setQuestionAsked] = useState("Tell Me About Yourself")
@@ -26,7 +16,6 @@ function QuestionPage() {
     <section className="QuestionPage" >
 
       <div className="question-title-area">
-        {/* <Link to={process.env.PUBLIC_URL + "/"}>GO BACK</Link> */}
         <h2 >  {questionAsked} </h2>
       </div>
 
@@ -71,27 +60,6 @@ function QuestionPage() {
           ))
         }
       </Tabs>
-
-        {/* <Accordion allowMultipleExpanded allowZeroExpanded >
-          {
-            Object.entries(questions).map(([k, v]) => (
-              <AccordionItem key={k}>
-                <AccordionItemHeading>
-                  <AccordionItemButton>
-                    {k}
-                  </AccordionItemButton>
-                </AccordionItemHeading>
-                {
-                  v.map((x, index) =>
-                    <AccordionItemPanel key={index}>
-                      <p >({index}) {x}</p>
-                    </AccordionItemPanel>
-                  )
-                }
-              </AccordionItem>
-            ))
-          }
-        </Accordion> */}
       </div>
 
     </section>
