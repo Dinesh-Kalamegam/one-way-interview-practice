@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/one-way-interview-practice/static/css/main.b375392c.chunk.css",
-    "main.js": "/one-way-interview-practice/static/js/main.85dfc5ce.chunk.js",
-    "main.js.map": "/one-way-interview-practice/static/js/main.85dfc5ce.chunk.js.map",
-    "runtime-main.js": "/one-way-interview-practice/static/js/runtime-main.b1dbfc82.js",
-    "runtime-main.js.map": "/one-way-interview-practice/static/js/runtime-main.b1dbfc82.js.map",
+    "main.css": "/one-way-interview-practice/static/css/main.4892120d.chunk.css",
+    "main.js": "/one-way-interview-practice/static/js/main.98a3a395.chunk.js",
+    "main.js.map": "/one-way-interview-practice/static/js/main.98a3a395.chunk.js.map",
+    "runtime-main.js": "/one-way-interview-practice/static/js/runtime-main.053e1485.js",
+    "runtime-main.js.map": "/one-way-interview-practice/static/js/runtime-main.053e1485.js.map",
     "static/css/2.27175f2b.chunk.css": "/one-way-interview-practice/static/css/2.27175f2b.chunk.css",
     "static/js/2.a899ef12.chunk.js": "/one-way-interview-practice/static/js/2.a899ef12.chunk.js",
     "static/js/2.a899ef12.chunk.js.map": "/one-way-interview-practice/static/js/2.a899ef12.chunk.js.map",
-    "static/js/3.4e0a8bae.chunk.js": "/one-way-interview-practice/static/js/3.4e0a8bae.chunk.js",
-    "static/js/3.4e0a8bae.chunk.js.map": "/one-way-interview-practice/static/js/3.4e0a8bae.chunk.js.map",
+    "static/js/3.5d66b57c.chunk.js": "/one-way-interview-practice/static/js/3.5d66b57c.chunk.js",
+    "static/js/3.5d66b57c.chunk.js.map": "/one-way-interview-practice/static/js/3.5d66b57c.chunk.js.map",
     "index.html": "/one-way-interview-practice/index.html",
     "static/css/2.27175f2b.chunk.css.map": "/one-way-interview-practice/static/css/2.27175f2b.chunk.css.map",
-    "static/css/main.b375392c.chunk.css.map": "/one-way-interview-practice/static/css/main.b375392c.chunk.css.map",
+    "static/css/main.4892120d.chunk.css.map": "/one-way-interview-practice/static/css/main.4892120d.chunk.css.map",
     "static/js/2.a899ef12.chunk.js.LICENSE.txt": "/one-way-interview-practice/static/js/2.a899ef12.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b1dbfc82.js",
+    "static/js/runtime-main.053e1485.js",
     "static/css/2.27175f2b.chunk.css",
     "static/js/2.a899ef12.chunk.js",
-    "static/css/main.b375392c.chunk.css",
-    "static/js/main.85dfc5ce.chunk.js"
+    "static/css/main.4892120d.chunk.css",
+    "static/js/main.98a3a395.chunk.js"
   ]
 }
