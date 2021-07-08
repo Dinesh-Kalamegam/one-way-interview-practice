@@ -1,8 +1,53 @@
-@import 'globals';
+@import "globals";
 
-.QuestionPage{
-    // border: solid 1px black;
-    // padding: 1em;
-    // margin: 1em;
-    // min-height: 100%;
+$video-dimension: 50%;
+
+.question-title-area{
+    text-align: center;
+}
+.question-area{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.question-area-video {
+    flex-basis: $video-dimension;
+    width: $video-dimension;
+    padding: 1em;
+}
+
+.question-area-selection{
+    // overflow-y: scroll;
+    // height: 600px;
+    flex-basis: 40% ;
+}
+
+.recording-option{
+    padding: 0.5em;
+    width: 50%;
+    // margin-left: 1em;
+    text-overflow: wrap;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: right;
+  
+    &:hover{
+      cursor: pointer;
+      background-color: rgb(161, 255, 161);
+  
+    }
+}
+.question-selection-button{
+    width: 100%;
+    padding: 1em;
+
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(161, 255, 161);
+    
+      }
 }

@@ -14,7 +14,7 @@ function App() {
         <div className="app-content">
 
           <Route exact path={process.env.PUBLIC_URL + "/"}>
-            <LandingPage />
+            <QuestionPage />
           </Route>
 
           <Route exact path={process.env.PUBLIC_URL + "/question"}>
