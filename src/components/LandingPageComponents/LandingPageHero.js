@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './LandingPageHero.scss'
 
-function HomeHero() {
+function LandingPageHero() {
     return (
         <section>
-        <img src={process.env.PUBLIC_URL+"/assets/images/hero_image.svg"}/>
+        {/* <img src={process.env.PUBLIC_URL+"/assets/images/hero_image.svg"}/> */}
         <div >
           <h1>Practice For Your <span>HireVue</span> </h1>
           <Link to={process.env.PUBLIC_URL + "/question"}>
@@ -16,4 +16,4 @@ function HomeHero() {
     )
 }
 
-export default HomeHero
+export default LandingPageHero

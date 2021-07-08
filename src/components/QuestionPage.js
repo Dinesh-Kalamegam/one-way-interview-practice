@@ -7,17 +7,17 @@ import './QuestionPage.scss';
 
 function QuestionPage() {
   const questions = require("../questions.json")
-  const [questionState, setQuestionState] = useState("Tell Me About Yourself")
+  const [questionAsked, setQuestionAsked] = useState("Tell Me About Yourself")
 
   const [userTimeLimit, setUserTimeLimit] = useState(30000)
   const [userCountDown, setUserCountDown] = useState(3000)
 
   return (
-    <section >
+    <section className="QuestionPage" >
 
       <h2 >
         <Link  to={process.env.PUBLIC_URL + "/"}>GO BACK</Link>
-        {questionState}
+        {questionAsked}
       </h2>
 
       <div >
@@ -59,7 +59,7 @@ function QuestionPage() {
         {
           Object.entries(questions).map(([k, v]) => (
             <TabPanel >
-              {v.map(q => (<button  value={q} onClick={e => setQuestionState(e.target.value)}>{q}</button>))}
+              {v.map(q => (<button  value={q} onClick={e => setQuestionAsked(e.target.value)}>{q}</button>))}
             </TabPanel>
           ))
         }

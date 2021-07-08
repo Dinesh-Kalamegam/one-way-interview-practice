@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
+html{
+  min-height: 100%;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Montserrat', sans-serif;
   // background-color: hsl(218, 29%, 95%);
-  background-color:hsl(210, 37%, 97%);
-
+  // background-color:hsl(210, 37%, 97%);
 }

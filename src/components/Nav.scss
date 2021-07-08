@@ -1,0 +1,15 @@
+@import "globals";
+
+.nav {
+    display: flex;
+    border: solid 1px black;
+    margin: 0;
+    padding: 0;
+    background-color:$accent-color;
+    color: white;
+    list-style: none;
+
+    &:first-child{
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,12 @@
+.App{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr 1.5rem;
+
+    // background-color: red;
+}
+
+.app-content{
+    padding: 1em;
+}
+
