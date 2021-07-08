@@ -8,11 +8,7 @@ A website for OnDemand Interview practice such as Hirevue, Sonru or whatever oth
 
 Simply choose a question, countdown time and question time limit then you should be good to go.
 
-**UPDATE AS OF 07/07/2021** : Just completed a major UI overhaul - I figured it would be simpler if a user can just change the question directly from the question page instead of going back to the homepage. This ends up simplifying the design so there are only two pages
-1) The Landing Page
-2) The Question Page 
-
-Doing this also decoupled the two pages so the question page doesn't need a prop from the home page anymore nor does the homepage need the JSON file of questions.
+**UPDATE AS OF 08/07/2021** : Wasn't happy with the styling so I ended up deleting all of it and restarting. For the time being the website just loads straight into the question page instead of the landing page which I will route back in once it's ready.
 
 ## Credits 
 The video recorder is from 
