@@ -2,8 +2,7 @@ import React from 'react'
 import './App.scss';
 import { BrowserRouter as Router, HashRouter, Route, Link } from 'react-router-dom';
 import QuestionPage from './components/QuestionPage';
-import HomeHero from './components/HomeHero';
-import HomeHowWorks from './components/HomeHowWorks';
+import LandingPage from './components/LandingPage';
 
 function App() {
   return (
@@ -12,21 +11,11 @@ function App() {
         <Router >
 
           <Route exact path={process.env.PUBLIC_URL + "/"}>
-            {/* Hero Row of the Homepage */}
-            <HomeHero />
-            <HomeHowWorks/>
-          <Link to={process.env.PUBLIC_URL + "/question" }>
-            <h2> Try it  </h2>
-          </Link>
-
-            
-
+            <LandingPage/>
           </Route>
 
-
-
-          <Route exact path={process.env.PUBLIC_URL + "/question" }>
-            <QuestionPage/>
+          <Route exact path={process.env.PUBLIC_URL + "/question"}>
+            <QuestionPage />
           </Route>
 
         </Router>

@@ -1,11 +1,16 @@
 @import 'globals';
 
 $video-dimension : 85%;
+$accent-color:white;
+.QuestionApp{
+  background-image: $linear-grad;
+}
 
 .QuestionPage{
   height: 100vh;
   display: flex;
   justify-content: center;
+
 }
 
 h2{

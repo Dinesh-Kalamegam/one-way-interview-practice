@@ -1,12 +1,11 @@
-import React from 'react'
-import { useState } from 'react'
-import './QuestionPage.scss';
-import VideoRecorder from 'react-video-recorder'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import VideoRecorder from 'react-video-recorder'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import './QuestionPage.scss';
 
-function QuestionPage(props) {
+function QuestionPage() {
   const questions = require("../questions.json")
   const [questionState, setQuestionState] = useState("Tell Me About Yourself")
 
@@ -14,7 +13,7 @@ function QuestionPage(props) {
   const [userCountDown, setUserCountDown] = useState(3000)
 
   return (
-    <section>
+    <section className="QuestionApp">
       <h2 className="question-title">
         <Link className="go-back-arrow" to={process.env.PUBLIC_URL + "/"}></Link>
         {questionState}

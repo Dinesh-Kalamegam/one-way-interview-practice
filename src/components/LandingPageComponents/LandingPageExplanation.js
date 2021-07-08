@@ -1,6 +1,6 @@
 import React from 'react'
-import HowWorksCard from './HowWorksCard'
-import './HomeHowWorks.scss'
+import HowWorksCard from '../HowWorksCard'
+import './LandingPageExplanation.scss'
 
 function HomeHowWorks() {
     return (
