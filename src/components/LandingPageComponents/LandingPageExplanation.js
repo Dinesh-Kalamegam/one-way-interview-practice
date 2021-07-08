@@ -6,7 +6,7 @@ function HomeHowWorks() {
     return (
         <section >
             <h2>How it works</h2>
-            <div className="home-howworks">
+            <div>
                 <HowWorksCard 
                     svg_filepath="selection.svg" 
                     text="(1) Choose a question from the lists below"
