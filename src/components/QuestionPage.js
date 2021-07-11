@@ -15,12 +15,12 @@ function QuestionPage() {
   return (
     <section className="QuestionPage" >
 
-      <div className="question-title-area">
+      <div className="question-title-area question-page-section">
         <h2 >  {questionAsked} </h2>
       </div>
 
       <div className="question-area" >
-        <div className="question-area-video">
+        <div className="question-area-video question-page-section">
           <VideoRecorder
             countdownTime={userCountDown}
             timeLimit={userTimeLimit}
@@ -44,11 +44,19 @@ function QuestionPage() {
           </select>
         </div>
 
-        <Tabs className="question-area-selection" >
+        <div className="question-area-notes question-page-section">
+          <p>Some Space to gather your thoughts</p>
+          <textarea className="question-area-notes-input" type="text"></textarea>
+
+        </div>
+      </div>
+
+
+        <Tabs className="question-area-selection question-page-section" >
         <TabList>
           {
             Object.entries(questions).map(([k, v]) => (
-              <Tab>{k}</Tab>
+              <Tab key={k}>{k}</Tab>
             ))
           }
         </TabList>
@@ -60,7 +68,6 @@ function QuestionPage() {
           ))
         }
       </Tabs>
-      </div>
 
     </section>
   );
