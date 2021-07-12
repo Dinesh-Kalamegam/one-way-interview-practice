@@ -8,8 +8,6 @@ A website for OnDemand Interview practice such as Hirevue, Sonru or whatever oth
 
 Simply choose a question, countdown time and question time limit then you should be good to go.
 
-**UPDATE AS OF 08/07/2021** : Wasn't happy with the styling so I ended up deleting all of it and restarting. For the time being the website just loads straight into the question page instead of the landing page which I will route back in once it's ready.
-
 ## Credits 
 The video recorder is from 
 https://github.com/fbaiodias/react-video-recorder 

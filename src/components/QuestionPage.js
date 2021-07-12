@@ -49,7 +49,6 @@ function QuestionPage() {
         </div>
       </div>
 
-
       <Tabs className="question-area-selection question-page-section" >
         <div><p>THE CURRENT QUESTION :  {questionAsked} </p> </div>
         <TabList>
