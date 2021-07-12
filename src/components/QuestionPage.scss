@@ -75,6 +75,7 @@ $container-color: hsl(213, 43%, 98%);
     &:hover{
         cursor: pointer;
         background-color: rgb(161, 255, 161);
+        transition: ease-in-out 0.3s;
       }
 }
 

@@ -3,7 +3,7 @@ import './Footer.scss'
 function Footer() {
     return (
         <footer className="footer">
-            <a href="http://dinesh-kalamegam.github.io/">Made By Dinesh Kalamegam </a>
+            <a target="#" href="http://dinesh-kalamegam.github.io/">Designed and  Made By Dinesh Kalamegam </a>
         </footer>
     )
 }

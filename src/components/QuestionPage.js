@@ -8,7 +8,6 @@ import './QuestionPage.scss';
 function QuestionPage() {
   const questions = require("../questions.json")
   const [questionAsked, setQuestionAsked] = useState("Tell Me About Yourself")
-
   const [userTimeLimit, setUserTimeLimit] = useState(30000)
   const [userCountDown, setUserCountDown] = useState(3000)
 
