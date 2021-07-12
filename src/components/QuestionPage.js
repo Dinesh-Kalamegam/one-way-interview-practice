@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import VideoRecorder from 'react-video-recorder'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './react-tabs.scss';
@@ -45,7 +44,7 @@ function QuestionPage() {
 
         <div className="question-area-notes question-page-section">
           <p>Some Space to gather your thoughts</p>
-          <textarea className="question-area-notes-input" type="text"></textarea>
+          <textarea placeholder="click here and start typing" label="notes" className="question-area-notes-input" type="text"></textarea>
 
         </div>
       </div>
@@ -55,15 +54,15 @@ function QuestionPage() {
         <div><p>THE CURRENT QUESTION :  {questionAsked} </p> </div>
         <TabList>
           {
-            Object.entries(questions).map(([k, v]) => (
+            Object.keys(questions).map(k => (
               <Tab key={k}>{k}</Tab>
             ))
           }
         </TabList>
         {
-          Object.entries(questions).map(([k, v]) => (
-            <TabPanel >
-              {v.map(q => (<button className="question-selection-button" value={q} onClick={e => setQuestionAsked(e.target.value)}>{q}</button>))}
+          Object.values(questions).map((v,ind) => (
+            <TabPanel key={ind} >
+              {v.map((q,qInd) => (<button key={qInd} className="question-selection-button" value={q} onClick={e => setQuestionAsked(e.target.value)}>{q}</button>))}
             </TabPanel>
           ))
         }
