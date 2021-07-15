@@ -1,5 +1,7 @@
-<img src="https://raw.githubusercontent.com/Dinesh-Kalamegam/one-way-interview-practice/4f3c057d3e6dfd8c439a4e7c47376490f7724418/public/assets/images/hero_image.svg" style="text-align:center; width:100%">
-
+<figure>
+    <img src="https://raw.githubusercontent.com/Dinesh-Kalamegam/one-way-interview-practice/4f3c057d3e6dfd8c439a4e7c47376490f7724418/public/assets/images/hero_image.svg" style="text-align:center; width:100%">
+    <figcaption style="text-align:center"><em>Image Credit : <a href="https://undraw.co/"> undraw.co </a> </em></figcaption>
+</figure>
 
 # One Way Interview / Hirevue Practice 
 **LIVE WEBSITE AT:** 
