@@ -4,7 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './react-tabs.scss';
 import './QuestionPage.scss';
 import { useModal, Modal } from 'react-morphing-modal';
-import 'react-morphing-modal/dist/ReactMorphingModal.css';
+import './react-modal-custom.scss';
 
 
 function QuestionPage() {
@@ -13,7 +13,10 @@ function QuestionPage() {
   const [userTimeLimit, setUserTimeLimit] = useState(30000)
   const [userCountDown, setUserCountDown] = useState(3000)
 
-  const { modalProps, getTriggerProps } = useModal();
+  const { modalProps, getTriggerProps } = useModal({
+    // background:'red',
+    padding:0
+  });
 
   return (
     <section className="QuestionPage" >
@@ -55,8 +58,8 @@ function QuestionPage() {
         </div>
       </div>
 
-      <Modal {...modalProps}>
-      <Tabs className="question-area-selection question-page-section" >
+      <Modal className="question-selection-modal" {...modalProps}>
+      <Tabs>
         <div><p>THE CURRENT QUESTION :  {questionAsked} </p> </div>
         <TabList>
           {
