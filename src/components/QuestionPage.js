@@ -14,8 +14,6 @@ function QuestionPage() {
   const [userCountDown, setUserCountDown] = useState(3000)
 
   const { modalProps, getTriggerProps } = useModal({
-    // background:'red',
-    padding:0
   });
 
   return (
