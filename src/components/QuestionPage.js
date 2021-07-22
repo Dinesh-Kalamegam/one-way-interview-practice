@@ -22,7 +22,7 @@ function QuestionPage() {
     <section className="QuestionPage" >
       <div className="question-title-area question-page-section">
         <h2 >  {questionAsked} </h2>
-        <button {...getTriggerProps()}>Change Question</button>
+        <button  className="change-question" {...getTriggerProps()}>Change Question</button>
 
       </div>
 
