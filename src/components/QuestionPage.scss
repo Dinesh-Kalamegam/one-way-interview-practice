@@ -1,7 +1,7 @@
 @import "globals";
 
 $video-dimension: 50%;
-$container-color: hsl(213, 43%, 98%);
+$container-color: white;
 
 .QuestionPage{
     display: flex;
@@ -11,15 +11,16 @@ $container-color: hsl(213, 43%, 98%);
 .question-page-section{
     padding: 1rem;
     border: solid 1px black;
-    border-radius: 1rem;
+    // border-radius: 1rem;
     background-color: $container-color;
-    box-shadow: rgb(184, 185, 190) 3px 3px 6px, rgb(255, 255, 255) -3px -3px 6px;
+    // box-shadow: rgb(184, 185, 190) 3px 3px 6px, rgb(255, 255, 255) -3px -3px 6px;
     // box-shadow: $accent-color 3px 3px 6px, rgb(255, 255, 255) -3px -3px 6px;
     border-color: rgb(209, 217, 230);
     border-color: $accent-color;
 }
 .question-title-area{
     text-align: center;
+    padding: 0 1rem;
 }
 
 .question-area{
@@ -73,6 +74,9 @@ $container-color: hsl(213, 43%, 98%);
 }
 
 .question-selection-button{
+    background-color: white;
+    border: solid 1px black;
+    margin: 0.5rem 0;
     width: 100%;
     padding: 1rem;
     // margin-bottom: 1rem;

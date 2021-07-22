@@ -9,7 +9,7 @@ function App() {
         <div className="app-content">
             <QuestionPage />
         </div>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

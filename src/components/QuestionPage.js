@@ -3,6 +3,9 @@ import VideoRecorder from 'react-video-recorder'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import './react-tabs.scss';
 import './QuestionPage.scss';
+import { useModal, Modal } from 'react-morphing-modal';
+import 'react-morphing-modal/dist/ReactMorphingModal.css';
+
 
 function QuestionPage() {
   const questions = require("../questions.json")
@@ -10,11 +13,14 @@ function QuestionPage() {
   const [userTimeLimit, setUserTimeLimit] = useState(30000)
   const [userCountDown, setUserCountDown] = useState(3000)
 
+  const { modalProps, getTriggerProps } = useModal();
+
   return (
     <section className="QuestionPage" >
-
       <div className="question-title-area question-page-section">
         <h2 >  {questionAsked} </h2>
+        <button {...getTriggerProps()}>Change Question</button>
+
       </div>
 
       <div className="question-area" >
@@ -49,6 +55,7 @@ function QuestionPage() {
         </div>
       </div>
 
+      <Modal {...modalProps}>
       <Tabs className="question-area-selection question-page-section" >
         <div><p>THE CURRENT QUESTION :  {questionAsked} </p> </div>
         <TabList>
@@ -60,12 +67,14 @@ function QuestionPage() {
         </TabList>
         {
           Object.values(questions).map((v,ind) => (
-            <TabPanel key={ind} >
+            <TabPanel className="question-area-selection-panel" key={ind} >
               {v.map((q,qInd) => (<button key={qInd} className="question-selection-button" value={q} onClick={e => setQuestionAsked(e.target.value)}>{q}</button>))}
+              
             </TabPanel>
           ))
         }
       </Tabs>
+      </Modal>
 
     </section>
   );
