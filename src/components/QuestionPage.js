@@ -18,14 +18,12 @@ function QuestionPage() {
 
   return (
     <section className="QuestionPage" >
-      <div className="question-title-area question-page-section">
-        <h2 >  {questionAsked} </h2>
-        <button  className="change-question" {...getTriggerProps()}>Change Question</button>
-
-      </div>
-
       <div className="question-area" >
         <div className="question-area-video question-page-section">
+          <div className="question-title-area question-page-section">
+            <h2 className="question">  {questionAsked} </h2>
+            <button className="change-question" {...getTriggerProps()}>Change Question</button>
+          </div>
           <VideoRecorder
             countdownTime={userCountDown}
             timeLimit={userTimeLimit}
@@ -57,24 +55,24 @@ function QuestionPage() {
       </div>
 
       <Modal className="question-selection-modal" {...modalProps}>
-      <Tabs>
-        <div><p>THE CURRENT QUESTION :  {questionAsked} </p> </div>
-        <TabList>
+        <Tabs>
+          <div><p>THE CURRENT QUESTION :  {questionAsked} </p> </div>
+          <TabList>
+            {
+              Object.keys(questions).map(k => (
+                <Tab key={k}>{k}</Tab>
+              ))
+            }
+          </TabList>
           {
-            Object.keys(questions).map(k => (
-              <Tab key={k}>{k}</Tab>
+            Object.values(questions).map((v, ind) => (
+              <TabPanel className="question-area-selection-panel" key={ind} >
+                {v.map((q, qInd) => (<button key={qInd} className="question-selection-button" value={q} onClick={e => setQuestionAsked(e.target.value)}>{q}</button>))}
+
+              </TabPanel>
             ))
           }
-        </TabList>
-        {
-          Object.values(questions).map((v,ind) => (
-            <TabPanel className="question-area-selection-panel" key={ind} >
-              {v.map((q,qInd) => (<button key={qInd} className="question-selection-button" value={q} onClick={e => setQuestionAsked(e.target.value)}>{q}</button>))}
-              
-            </TabPanel>
-          ))
-        }
-      </Tabs>
+        </Tabs>
       </Modal>
 
     </section>

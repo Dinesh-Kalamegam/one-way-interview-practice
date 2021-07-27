@@ -1,14 +1,7 @@
 .App{
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 1fr 1.5rem;
-
-    // background-color: rgb(250, 250, 250);
     background-color: hsl(218, 29%, 95%);
-    // background-image:linear-gradient(160deg,#0f64f2,#cbece8)
-    // background: linear-gradient(135deg, rgb(250, 250, 250), 35%, #0f64f2 35%);
-
-
 }
 
 .app-content{
