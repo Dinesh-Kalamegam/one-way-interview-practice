@@ -1,9 +1,45 @@
+$hirevue-darkblue : #273553;
+$hirevue-red : #e3203b;
+
 .App{
     display: grid;
     min-height: 100vh;
     background-color: hsl(218, 29%, 95%);
 }
 
+.app-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: $hirevue-darkblue;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    min-height: 2rem;
+    color: white;
+
+
+    @media screen and(max-width:480px){
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        border : solid 1px white;
+        border-radius: 0.3rem;
+        padding: 1rem;
+
+        &:hover{
+            background-color: $hirevue-red;
+            // color: black;
+            font-weight: bold;
+            border:none;
+            transition: 0.2s ease-in-out;
+        }
+
+    }
+}
 .app-content{
     padding: 1em;
 }

@@ -1,3 +1,5 @@
+@import "globals";
+
 .RMM__close-button {
     position: absolute;
     top: 20px;
@@ -59,6 +61,8 @@
 }
 
 .RMM__body {
+    background-color: $hirevue-darkblue;
+    color: white;
     position: relative;
     height: 100%;
     // overflow-y: scroll;
