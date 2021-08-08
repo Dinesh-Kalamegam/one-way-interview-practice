@@ -5,7 +5,7 @@ import './react-tabs.scss';
 import './QuestionPage.scss';
 import { useModal, Modal } from 'react-morphing-modal';
 import './react-modal-custom.scss';
-
+import './stop-button'
 
 function QuestionPage() {
   const questions = require("../questions.json")
@@ -36,10 +36,10 @@ function QuestionPage() {
             <div className="recording-option-container">
               <select className="recording-option" onClick={e => setUserTimeLimit(parseInt(e.target.value))}>
                 <option value="10000">Time Limit: 10 seconds</option>
-                <option value="30000">Time Limit: 30 seconds</option>
+                <option defaultValue  selected value="30000">Time Limit: 30 seconds</option>
                 <option value="60000">Time Limit: 1 minute</option>
                 <option value="120000">Time Limit: 2 minutes</option>
-                <option defaultValue value="180000">Time Limit: 3 minutes</option>
+                <option  value="180000">Time Limit: 3 minutes</option>
               </select>
 
               <select className="recording-option" onClick={e => setUserCountDown(parseInt(e.target.value))}>
