@@ -15,18 +15,15 @@
       bottom: -1px;
       position: relative;
       list-style: none;
-      // padding: 6px 12px;
       padding: 6px 1rem;
-      margin: 0 0.4rem;
+      margin-right: 0.4rem;
       cursor: pointer;
       background-color:hsl(221, 36%, 34%);
-      // border-radius: 5px 5px 0 0;
 
       &--selected {
         background: #fff;
         border-color: #aaa;
         color: black;
-        // border-radius: 5px 5px 0 0;
       }
   
       &--disabled {
@@ -36,9 +33,9 @@
       }
   
       &:focus {
-        box-shadow: 0 0 5px hsl(208, 99%, 50%);
-        border-color: hsl(208, 99%, 50%);
-        outline: none;
+        // box-shadow: 0 0 5px hsl(208, 99%, 50%);
+        // border-color: hsl(208, 99%, 50%);
+        // outline: none;
   
         &:after {
           content: "";
