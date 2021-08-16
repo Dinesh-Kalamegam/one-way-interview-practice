@@ -8,22 +8,10 @@ $container-color: white;
     flex-direction: column;
     row-gap: 1rem;
 }
-
-// .header-section{
-//     text-align: center;
-//     font-weight: bold;
-//     background-color: $hirevue-darkblue;
-//     color: white;
-//     // padding: 0.5rem;
-//     font-size: 2rem;
-//     margin-bottom: 1rem;
-// }
 .question-page-section{
     padding: 1rem;
     border: solid 1px black;
     background-color: $container-color;
-    // border-color: rgb(209, 217, 230);
-    // border-color: $accent-color;
     border-radius: 0.3rem;
 }
 .question-title-area{
@@ -41,30 +29,8 @@ $container-color: white;
 
 }
 
-.render-actions__ActionsWrapper-dp6lnv-0{
-    bottom:-60px;
-}
-
-.dNKPms{
-    // padding: 1rem;
-    background-color: $hirevue-red;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0.3rem;
-
-    &:hover{
-        color: black;
-        transition: 0.2s ease-in-out;
-
-    }
-}
-
-.button__Button-hkteey-0{
-    padding: 0.5rem;
-}
 .question{
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .change-question{
@@ -122,9 +88,6 @@ $container-color: white;
 }
 
 @media screen and (max-width:500px){
-    .question-area-video{
-        // height: fit-content;
-    }
     .recording-option-container{
         flex-direction: column;
     }
@@ -142,54 +105,33 @@ $container-color: white;
     resize: none;
     padding: 1rem;
     height: 80%;
-
-    // border-color: $accent-color;
-    // color: $accent-color;
     font-weight: bold;
 }
 
 .current-question{
     font-size: 1.4rem;
     font-weight: bold;
-    text-align: center;
-}
-.question-area-selection-panel{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    justify-content: center;
-    padding: 1rem;
-    column-gap: 1rem;
-    row-gap: 1rem;
 }
 
 .question-selection-button{
-    // background-color: white;
-    background-color: $hirevue-greybg;
-    font-weight: 500;
-    border: solid 1px black;
-    flex-basis: 25%;
-    
-    @media screen and (max-width:768px){
-        flex-basis: 50%;
-    }
-    @media screen and (max-width:480px){
-        flex-basis: 100%;
-    }
-
-    
-    min-height: 100px;
-
-    &:focus{
-        background-color: lighten($hirevue-lightblue,10);
-        font-weight: bold;
-    }
-
+    border: none;
+    padding: 0.5rem 1rem;
     &:hover{
         cursor: pointer;
-        background-color: lighten($hirevue-lightblue,20);
-        font-weight: bold;
-        transition: ease-in-out 0.3s;
+        transition: ease-in-out 0.2s;
       }
 }
 
+.question-table{
+    width: 100%;
+
+    td{
+        padding: 0.5rem;
+        border: solid 1px white;
+    }
+    
+}
+
+.question-table-minor{
+    text-align: center;
+}

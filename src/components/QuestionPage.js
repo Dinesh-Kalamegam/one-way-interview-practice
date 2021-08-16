@@ -5,7 +5,6 @@ import './react-tabs.scss';
 import './QuestionPage.scss';
 import { useModal, Modal } from 'react-morphing-modal';
 import './react-modal-custom.scss';
-import StopButton from './stop-button'
 
 
 function QuestionPage() {
@@ -19,9 +18,6 @@ function QuestionPage() {
 
   return (
     <React.Fragment>
-      {/* <section className="header-section">
-        <h1> One Way Interview Practice</h1>
-      </section> */}
       <section className="QuestionPage" >
         <div className="question-area" >
           <div className="question-area-video question-page-section">
@@ -36,11 +32,11 @@ function QuestionPage() {
             />
             <div className="recording-option-container">
               <select className="recording-option" onClick={e => setUserTimeLimit(parseInt(e.target.value))}>
+                <option defaultValue value="30000">Time Limit: 30 seconds</option>
                 <option value="10000">Time Limit: 10 seconds</option>
-                <option defaultValue  selected value="30000">Time Limit: 30 seconds</option>
                 <option value="60000">Time Limit: 1 minute</option>
                 <option value="120000">Time Limit: 2 minutes</option>
-                <option  value="180000">Time Limit: 3 minutes</option>
+                <option value="180000">Time Limit: 3 minutes</option>
               </select>
 
               <select className="recording-option" onClick={e => setUserCountDown(parseInt(e.target.value))}>
@@ -64,7 +60,7 @@ function QuestionPage() {
 
         <Modal className="question-selection-modal" {...modalProps}>
           <Tabs>
-            <div><p className="current-question">CURRENT QUESTION :  {questionAsked} </p> </div>
+            <div><p className="current-question"> {questionAsked} </p> </div>
             <TabList>
               {
                 Object.keys(questions).map(k => (
@@ -75,7 +71,21 @@ function QuestionPage() {
             {
               Object.values(questions).map((v, ind) => (
                 <TabPanel className="question-area-selection-panel" key={ind} >
-                  {v.map((q, qInd) => (<button key={qInd} className="question-selection-button" value={q} onClick={e => setQuestionAsked(e.target.value)}>{q}</button>))}
+                  <table className="question-table">
+                    <tbody>
+                      {v.map((q, qInd) => (
+                        <tr className="question-table-row" key={qInd}>
+                          <td className="question-table-minor">{qInd}</td>
+                          <td>{q}</td>
+                          <td className="question-table-minor">
+                            <button className="question-selection-button" disabled={q===questionAsked} value={q} onClick={e => setQuestionAsked(e.target.value)}>
+                              Change Question 
+                            </button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
 
                 </TabPanel>
               ))

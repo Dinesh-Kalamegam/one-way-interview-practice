@@ -1,5 +1,6 @@
 {
     "General": [
+        "Tell Me About Yourself",
         "Why do you want to work for X company?",
         "Why do you want to leave your current/last company?",
         "What are you looking for in your next role?",
@@ -87,7 +88,7 @@
         "How do you define success and how do you measure up to your own definition?",
         "What is the difference between hard work and smart work?"
     ],
-    "Amazon Leadership": [
+    "Amazon Leadership Principles": [
         "Tell me about a time you knew you couldn’t do everything the client wanted. How did you prioritize, and what was the outcome?",
         "Give me an example of a time things went very poorly in a customer interaction or when delivering a service or product. How did you try to make things right?",
         "In your experience, what makes some customers especially difficult to manage while others are easier?",
