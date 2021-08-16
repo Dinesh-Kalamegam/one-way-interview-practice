@@ -5,7 +5,8 @@ import './react-tabs.scss';
 import './QuestionPage.scss';
 import { useModal, Modal } from 'react-morphing-modal';
 import './react-modal-custom.scss';
-import './stop-button'
+import StopButton from './stop-button'
+
 
 function QuestionPage() {
   const questions = require("../questions.json")
