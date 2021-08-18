@@ -5,17 +5,8 @@ import './react-tabs.scss';
 import './QuestionPage.scss';
 import { useModal, Modal } from 'react-morphing-modal';
 import './react-modal-custom.scss';
-import { useReactMediaRecorder } from "react-media-recorder";
-
-
 
 function QuestionPage() {
-  const {
-    status,
-    startRecording,
-    stopRecording,
-    mediaBlobUrl,
-  } = useReactMediaRecorder({ video: true });
   const questions = require("../questions.json")
   const [questionAsked, setQuestionAsked] = useState("Tell Me About Yourself")
   const [userTimeLimit, setUserTimeLimit] = useState(30000)
@@ -38,7 +29,7 @@ function QuestionPage() {
               timeLimit={userTimeLimit}
               showReplayControls={true}
               renderDisconnectedView={() => <div></div>}
-              // replayVideoAutoplayAndLoopOff={true}
+            // replayVideoAutoplayAndLoopOff={true}
             />
             <div className="recording-option-container">
               <select className="recording-option" onClick={e => setUserTimeLimit(parseInt(e.target.value))}>
@@ -88,8 +79,8 @@ function QuestionPage() {
                           <td className="question-table-minor">{qInd}</td>
                           <td>{q}</td>
                           <td className="question-table-minor">
-                            <button className="question-selection-button" disabled={q===questionAsked} value={q} onClick={e => setQuestionAsked(e.target.value)}>
-                              Change Question 
+                            <button className="question-selection-button" disabled={q === questionAsked} value={q} onClick={e => setQuestionAsked(e.target.value)}>
+                              Change Question
                             </button>
                           </td>
                         </tr>
